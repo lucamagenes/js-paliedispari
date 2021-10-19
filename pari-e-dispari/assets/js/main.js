@@ -38,7 +38,7 @@ console.log('hai scelto il numero: ', userNumber);
 
 
 /**
- *  Ritorna un numero casuale compreso tra 1 e 5
+ *  Ritorna un numero casuale compreso tra due numeri
  *  @param {number} min - valore minimo del numero casuale
  *  @param {number} max - valore massimo del numero cauale
  *  @returns {number} numero casuale 
