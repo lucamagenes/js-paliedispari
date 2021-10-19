@@ -65,3 +65,10 @@ function pariDispari(numero) {
         return 'dispari'
     }
 }
+
+if (pariDispari(sum) == userChoice) {
+    console.log('Hai vinto');
+
+} else {
+    console.log('Hai perso');
+}
