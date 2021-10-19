@@ -29,11 +29,11 @@
 
 
 
-let userChoice = prompt('Pari o dispari?')
+/* let userChoice = prompt('Pari o dispari?')
 console.log(userChoice);
 
 let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'))
-console.log(userNumber);
+console.log(userNumber); */
 
 
 
@@ -44,6 +44,8 @@ console.log(userNumber);
  *  @returns {number} numero casuale 
  */
 function randomNumberGenerator(min, max) {
-    return Math.floor(Math.random() * (max - min - 4)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+let pcNumber = randomNumberGenerator(1, 5)
+console.log(pcNumber);
