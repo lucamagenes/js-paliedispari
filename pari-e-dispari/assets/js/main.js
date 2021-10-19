@@ -29,11 +29,11 @@
 
 
 
-/* let userChoice = prompt('Pari o dispari?')
-console.log(userChoice);
+let userChoice = prompt('Pari o dispari?')
+console.log('hai scelto: ', userChoice);
 
 let userNumber = parseInt(prompt('Scegli un numero da 1 a 5'))
-console.log(userNumber); */
+console.log('hai scelto il numero: ', userNumber);
 
 
 
@@ -48,4 +48,7 @@ function randomNumberGenerator(min, max) {
 }
 
 let pcNumber = randomNumberGenerator(1, 5)
-console.log(pcNumber);
+console.log('il numero del pc è: ', pcNumber);
+
+let sum = userNumber + pcNumber;
+console.log('totale: ', sum);
