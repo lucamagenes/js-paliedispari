@@ -52,3 +52,16 @@ console.log('il numero del pc è: ', pcNumber);
 
 let sum = userNumber + pcNumber;
 console.log('totale: ', sum);
+
+
+/**
+ *  Stabilisce se un numero è pari o dispari
+ *  @param {number} numero è il valore da inserire per essere verificato
+ * */
+function pariDispari(numero) {
+    if (numero % 2 == 0) {
+        return 'pari'
+    } else {
+        return 'dispari'
+    }
+}
