@@ -19,19 +19,37 @@
 let userWord = prompt('Scrivi una parola');
 console.log(userWord);
 
-const letters = userWord.split('');
-console.log(letters);
-
-
 
 function checkPalindromi(parola) {
 
-    return parola === parola.reverse();
+    /* PROCEDURA PER ESTESO
+    console.log(parola);
+    
+    const letters = parola.split('');
+    console.log(letters);
+    
+    const reverseLetters = letters.reverse();
+    console.log(reverseLetters.join(''));
+     */
 
+    //PROCEDURA ABBREVIATA
+    const parolaRovesciata = parola.split('').reverse().join('');
+    console.log(parolaRovesciata);
+
+    if (parola == parolaRovesciata) {
+        return true
+    } else {
+        return false
+    }
 }
 
-const reverseLetters = checkPalindromi(letters)
-console.log(reverseLetters);
+if (checkPalindromi(userWord)) {
+    console.log('è una parola palindroma');
+} else {
+    console.log('non è palindroma');
+}
+
+
 
 
 
